@@ -71,6 +71,10 @@ a.easy{
 	color: #008000;
     background-color: transparent;
 }
+p{
+	text-overflow: ellipsis; 
+	word-wrap: break-word;
+}
 button {
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 background-color: DodgerBlue; /* Green */
@@ -86,12 +90,25 @@ button.main {
  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 background-color: #4CAF50;
 border: none;
-color: grey;
+color: #1e7024;
 padding: 15px 32px;
 text-align: left;
 text-decoration: none;
 display: inline-block;
 font-size: 16px;
+}
+button.main1{
+	border-radius: 15px 50px 30px 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background-color: #7d96e8;
+	padding: 15px 32px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+a.easy1{
+	color: #4f64ab;
+    background-color: transparent;
 }
 div.fixedfooter {
 text-align:right;
@@ -123,12 +140,7 @@ img.logo{
 width:10%;
 height:10%;
 }
-p{
-    text-shadow:5px 5px 10px blue;
-	text-align:center;
-	font-size: 90px;
-	color:white;
-}
+
  img.displayed {
     display: block;
     margin-left: auto;
@@ -138,5 +150,29 @@ video{
     margin-right: auto;
     display: block
 }
-    
+ h3.center{
+	 width:80%;
+	 padding: 70px 0;
+	  margin:auto; 
+	 text-align:center;
+	 vertical-align:super;
+	 text-shadow:5px 5px 10px pink ;
+	text-align:center;
+	font-size: 90px;
+	color:white;
+ } 
+
+p.expert{
+	text-shadow:5px 5px 10px blue;
+	font-size: 30px;
+	background-color:transparent;
+	padding:5px;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:300px;
+	margin-right:300px;
+	color:white;
+	text-decoration:bold;
+	
+} 
 

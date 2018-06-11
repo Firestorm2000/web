@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {
-    background-image: url("guitar-abstract.jpg");
-}
-
-</style>
-<meta charset=utf-8 />
-<meta name="description" content="description">
- 
-<title>Popular chords</title>
- 
-<link rel="stylesheet" media="screen" href="style.css" />
- 
-
-</head>
- 
-<body>
-<ul id="nav">
-	<li><a href="Main.html">Home</a></li>
-	<li><a href="second_page.html">Popular chords</a></li>
-	<li><a href="trird_page.html">Popular songs</a></li>
-	<li><a href="forth_page.html">Basics</a></li>
-	<li><a href="fifth_page.html">Login</a></li>
-</ul>
-<br>
-<br>
-
-<br><br><br><br><br><br>
-
-<img class="displayed"src ="beginner-guitar-chords.jpg" alt="Guitar chords" align="middle"> 
-<div class="fixedfooter">
-<div><button class="main"><a class="easy" href="galery.html">Galery</a></button></div>
-<span >
-<img class = "logo"src="rcenm.png">
-</span>
-</div>
-</body>
- 
+   <head>
+      <style>
+         body {
+         background-image: url("guitar-abstract.jpg");
+         }
+      </style>
+      <meta charset=utf-8 />
+      <meta name="description" content="description">
+      <title>Popular chords</title>
+      <link rel="stylesheet" media="screen" href="style.css" />
+   </head>
+   <body>
+      <ul onmouseover="changeBack()"id="nav">
+         <li><a href="Main.html">Home</a></li>
+         <li><a href="second_page.html">Popular chords</a></li>
+         <li><a href="trird_page.html">Popular songs</a></li>
+         <li><a href="forth_page.html">Basics</a></li>
+         <button class="main1" style="float: right;"><a class="easy1" href="fifth_page.html">Login</a></button>
+      </ul>
+      <br>
+      <br>
+      <br><br><br><br><br><br>
+      <img onmouseover="work()" class="displayed" id ="img1" src ="beginner-guitar-chords.jpg" alt="Guitar chords" align="middle"> 
+      <div class="fixedfooter">
+         <div><button class="main"><a class="easy" href="galery.html">Galery</a></button></div>
+         <span >
+         <a class="easy" href="https://www.musicworld.bg/bg/home"><img class = "logo"src="rcenm.png"></a>
+         </span>
+      </div>
+      <script>
+         function work(){
+         var myImg = document.getElementById("img1"); 
+         myImg.width = 1000; 
+         }
+         function changeBack(){
+         var myImg = document.getElementById("img1"); 
+         myImg.width = 750; 
+         }
+      </script>
+   </body>
+    
 </html>

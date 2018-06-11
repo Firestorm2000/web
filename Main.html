@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {
-    background-image: url("guitar-abstract.jpg");
-}
-p{
-    text-shadow:5px 5px 10px blue;
-	text-align:center;
-	font-size: 90px;
-	color:white;
-}
-</style>
-<meta charset=utf-8 />
-<meta name="description" content="description">
- 
-<title>Home</title>
- 
-<link rel="stylesheet" media="screen" href="style.css" />
-
-
-</head>
- 
-<body>
-
-<ul id="nav">
-	<li><a href="Main.html">Home</a></li>
-	<li><a href="second_page.html">Popular chords</a></li>
-	<li><a href="trird_page.html">Popular songs</a></li>
-	<li><a href="forth_page.html">Basics</a></li>
-	<li><a href="fifth_page.html">Login</a></li>
-</ul>
-
-<br><br><br><br><br><br><br><br><br><br>
-
-<p>
-	Welcome to my site.
-</p>
-<div class="fixedfooter">
-<div style="color:purple" align="center">
-<button class= "main"><a class ="easy" href=https://www.guitar-pro.com/en/index.php>For easier learning</a></button>
-</div>
-<span >
-<img class = "logo"src="exsn.png">
-</span>
-</div>
-</body>
- 
+   <head>
+      <style>
+         body {
+         background-image: url("guitar-abstract.jpg");
+         }
+      </style>
+      <meta charset=utf-8 />
+      <meta name="description" content="description">
+      <title>Home</title>
+      <link rel="stylesheet" media="screen" href="style.css" />
+   </head>
+   <body>
+      <ul id="nav">
+         <li><a href="Main.html">Home</a></li>
+         <li><a href="second_page.html">Popular chords</a></li>
+         <li><a href="trird_page.html">Popular songs</a></li>
+         <li><a href="forth_page.html">Basics</a></li>
+         <button class="main1" style="float: right;"><a class="easy1" href="fifth_page.html">Login</a></button>
+      </ul>
+      <br><br><br><br>
+      <h3 onmouseover="changeBack()" class="center" id="2">
+         Welcome to my site.
+      </h3>
+      <p onmouseover="changeText()"class="expert" id="1" >
+         This is site for the one's who want
+         to learn a little bit more about playing guitar.
+         It has some video lessons,pictures of different chords,
+         links to some easy for learning songs.And we have some surprises for the one's that click on the little guitars.
+      </p>
+      <script>
+         function changeText(){
+         document.getElementById("1").innerHTML = "Ready,Set,GOOOO!!!";
+         }
+         function changeBack(){
+         document.getElementById("1").innerHTML = "This is site for the one's who want to learn a little bit more about playing guitar. It has some video lessons,pictures of different chords,links to some easy for learning songs.And we have some surprises for the one's that click on the little guitars.";
+         
+         }
+      </script>
+      <div class="fixedfooter">
+         <div style="color:purple" align="center">
+            <button class= "main"><a class ="easy" href=https://www.guitar-pro.com/en/index.php>For easier learning</a></button>
+         </div>
+         <span >
+         <a class="easy" href="https://www.youtube.com/watch?v=SWwswNJSGPg"><img class = "logo"src="exsn.png"></a>
+         </span>
+      </div>
+   </body>
+    
 </html>

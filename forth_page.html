@@ -1,76 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {
-    background-image: url("guitar-abstract.jpg");
-}
-</style>
-<meta charset=utf-8 />
-<meta name="description" content="description">
- 
-<title>Basics</title>
- 
-<link rel="stylesheet" media="screen" href="style.css" />
- 
-
-</head>
- 
-<body>
-<ul id="nav">
-	<li><a href="Main.html">Home</a></li>
-	<li><a href="second_page.html">Popular chords</a></li>
-	<li><a href="trird_page.html">Popular songs</a></li>
-	<li><a href="forth_page.html">Basics</a></li>
-	<li><a href="fifth_page.html">Login</a></li>
-</ul>
-<br>
-<br>
-<br><br><br><br>
-<div style="text-align:center;width:1100px; margin:0 auto;"> 
-  <button onclick="playPause()">Play/Pause</button> 
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-  <br>
-  <br>
-  <br>
-  <video id="video1" width="420">
-    <source src="Basic Guitar Chords Lesson 1 of 5  Learn D, G & A7 Chords.mp4" type="video/mp4">
-	
-  </video>
-</div> 
-
-
-<script> 
-var myVideo = document.getElementById("video1"); 
-
-function playPause() { 
-    if (myVideo.paused) 
-        myVideo.play(); 
-    else 
-        myVideo.pause(); 
-} 
-
-function makeBig() { 
-    myVideo.width = 560; 
-} 
-
-function makeSmall() { 
-    myVideo.width = 320; 
-} 
-
-function makeNormal() { 
-    myVideo.width = 420; 
-} 
-</script> 
-<div class="fixedfooter">
-<span >
-<img class = "logo"src="exsn.png">
-
-</span>
-</div>
-
-</body>
- 
+   <head>
+      <style>
+         body {
+         background-image: url("guitar-abstract.jpg");
+         }
+      </style>
+      <meta charset=utf-8 />
+      <meta name="description" content="description">
+      <title>Basics</title>
+      <link rel="stylesheet" media="screen" href="style.css" />
+   </head>
+   <body>
+      <ul id="nav">
+         <li><a href="Main.html">Home</a></li>
+         <li><a href="second_page.html">Popular chords</a></li>
+         <li><a href="trird_page.html">Popular songs</a></li>
+         <li><a href="forth_page.html">Basics</a></li>
+         <button class="main1" style="float: right;"><a class="easy1" href="fifth_page.html">Login</a></button>
+      </ul>
+      <br>
+      <br>
+      <br><br><br><br>
+      <div style="text-align:center;width:1100px; margin:0 auto;">
+         <button onclick="playPause()">Play/Pause</button> 
+         <button onclick="makeBig()">Big</button>
+         <button onclick="makeSmall()">Small</button>
+         <button onclick="makeNormal()">Normal</button>
+         <br>
+         <br>
+         <br>
+         <video id="video1" width="420">
+            <source src="Basic Guitar Chords Lesson 1 of 5  Learn D, G & A7 Chords.mp4" type="video/mp4">
+         </video>
+      </div>
+      <script> 
+         var myVideo = document.getElementById("video1"); 
+         
+         function playPause() { 
+             if (myVideo.paused) 
+                 myVideo.play(); 
+             else 
+                 myVideo.pause(); 
+         } 
+         
+         function makeBig() { 
+             myVideo.width = 560; 
+         } 
+         
+         function makeSmall() { 
+             myVideo.width = 320; 
+         } 
+         
+         function makeNormal() { 
+             myVideo.width = 420; 
+         } 
+      </script> 
+      <div class="fixedfooter">
+         <span >
+         <a class="easy" href="https://www.youtube.com/watch?v=2CkB4a0A7cQ"><img class = "logo"src="exsn.png"></a>
+         </span>
+      </div>
+   </body>
+    
 </html>
