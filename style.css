@@ -71,6 +71,7 @@ a.easy{
 	color: #008000;
     background-color: transparent;
 }
+
 p{
 	text-overflow: ellipsis; 
 	word-wrap: break-word;

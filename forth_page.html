@@ -4,6 +4,9 @@
       <style>
          body {
          background-image: url("guitar-abstract.jpg");
+		 background-repeat: no-repeat;
+		  background-position: center top;
+		  background-color:#eac5fa;
          }
       </style>
       <meta charset=utf-8 />
@@ -12,7 +15,7 @@
       <link rel="stylesheet" media="screen" href="style.css" />
    </head>
    <body>
-      <ul id="nav">
+      <ul onmouseover = "Change()" id="nav">
          <li><a href="Main.html">Home</a></li>
          <li><a href="second_page.html">Popular chords</a></li>
          <li><a href="trird_page.html">Popular songs</a></li>
@@ -23,14 +26,14 @@
       <br>
       <br><br><br><br>
       <div style="text-align:center;width:1100px; margin:0 auto;">
-         <button onclick="playPause()">Play/Pause</button> 
-         <button onclick="makeBig()">Big</button>
-         <button onclick="makeSmall()">Small</button>
-         <button onclick="makeNormal()">Normal</button>
+         <button  onclick="playPause()">Play/Pause</button> 
+         <button  onclick="makeBig()">Big</button>
+         <button  onclick="makeSmall()">Small</button>
+         <button  onclick="makeNormal()">Normal</button>
          <br>
          <br>
          <br>
-         <video id="video1" width="420">
+         <video  id="video1" width="500">
             <source src="Basic Guitar Chords Lesson 1 of 5  Learn D, G & A7 Chords.mp4" type="video/mp4">
          </video>
       </div>
@@ -39,22 +42,35 @@
          
          function playPause() { 
              if (myVideo.paused) 
-                 myVideo.play(); 
+                 {
+				 myVideo.play(); 
+				 document.body.style.backgroundImage = "url('tumblr_m5suisg0LN1qc3g8bo1_1280.jpg')";
+				 }
              else 
+				{
                  myVideo.pause(); 
+				 document.body.style.backgroundImage = "url('qsg-midi-body.jpg')";
+				 }
          } 
          
          function makeBig() { 
-             myVideo.width = 560; 
+             myVideo.width = 700; 
+			 document.body.style.backgroundImage = "url('custom-handmade-jumbo-acoustic-guitar-monkey-pod-spruce-madagascar-rosewood-2015-02.jpg')";
          } 
          
          function makeSmall() { 
              myVideo.width = 320; 
+			 document.body.style.backgroundImage ="url('guitar-and-inlay-by-tracy-cox-2.jpg')";
          } 
          
-         function makeNormal() { 
-             myVideo.width = 420; 
+         function makeNormal() {
+			 myVideo.width = 500; 
+             document.body.style.backgroundImage = "url('Lichty-Handcrafted-Parlor-Guitar-artwork-y-Clark-Hipolito-3.jpg')"; 
          } 
+		 function Change(){
+				
+				document.body.style.backgroundImage="url('guitar-abstract.jpg')";
+			}	
       </script> 
       <div class="fixedfooter">
          <span >
