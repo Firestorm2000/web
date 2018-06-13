@@ -12,6 +12,10 @@ ol {
     padding: 60px;
 	color : #0080ff;
 }
+ol li{
+	padding-bottom:2%;
+	
+}
 ul li {
 	float: left;
 	list-style: none;
@@ -38,7 +42,7 @@ a:link {
 }
 
 a:visited {
-    color: pink;
+    color: #6b1f66;
     background-color: transparent;
     text-decoration: none;
 }
@@ -176,4 +180,15 @@ p.expert{
 	text-decoration:bold;
 	
 } 
+#video1{
+	padding-top:5%;
+	padding-bottom:1%;
+}
+#h3_1{
+	padding-top:5%;
+}
+#nav{
+	padding-bottom:8%;
+	
+}
 
